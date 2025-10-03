@@ -15,9 +15,9 @@ export default function About() {
         </p>
       </div>
 
-      <Skills />
+      {/* <Skills />
 
-      <Experience />
+      <Experience /> */}
     </div>
   )
 }
