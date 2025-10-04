@@ -6,10 +6,10 @@ const PROJECTS: {
   liveLink: string
 }[] = [
   {
-    name: 'Project 1',
-    description: 'Lorem ipsum dolor sit amet',
-    liveLink: 'https://google.com',
-    previewImage: '/project1.png',
+    name: 'Waha',
+    description: 'WhatApp API self-hosted to send message automatically with N8N integration',
+    liveLink: 'https://waha.anvbeast.my.id',
+    previewImage: '/waha.jpg',
     repoUrl: 'https://github.com',
   },
   // {

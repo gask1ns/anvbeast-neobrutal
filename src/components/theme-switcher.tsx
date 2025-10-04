@@ -2,7 +2,7 @@
 
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
-
+import { Button } from '@/components/ui/button';
 import * as React from 'react'
 
 export function ThemeSwitcher() {
@@ -10,11 +10,15 @@ export function ThemeSwitcher() {
 
   return (
     <>
-      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-        <Sun className="stroke-main-foreground hidden size-4 sm:size-6 dark:inline" />
-        <Moon className="stroke-main-foreground inline size-4 sm:size-6 dark:hidden" />
-        <span className="sr-only">Toggle theme</span>
-      </button>
+    <Button
+      size="icon"
+      className="relative"
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+    >
+      <Sun className="stroke-text hidden h-6 w-6 w500:h-4 w500:w-4 dark:inline" />
+      <Moon className="stroke-text inline h-6 w-6 w500:h-4 w500:w-4 dark:hidden" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
     </>
   )
 }

@@ -23,7 +23,7 @@ export default function Home() {
         </p> */}
       </div>
 
-      {/* <Links /> */}
+      <Links /> 
     </div>
   )
 }
