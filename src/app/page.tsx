@@ -7,6 +7,10 @@ export default function Home() {
       <p className="mt-2 text-lg sm:text-xl">-Anvbeast</p>
       <div className="mt-8 text-base sm:text-lg">
         <p>Hi, my name is Iqbal Setyawan</p>
+        <br />
+        <p>Pecinta musik yang suka ngulik suara dari balik layar. Tertarik pada teknologi otomotif & inovasi masa depan. Menemukan disiplin dan semangat baru lewat lari.</p>
+        <br />
+        <p><strong>Keep learning, keep moving.</strong></p>
 
         <br />
 
