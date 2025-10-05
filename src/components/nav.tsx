@@ -13,10 +13,10 @@ export default function Nav() {
       path: '/',
       text: 'Home',
     },
-    {
-      path: '/about',
-      text: 'About Me',
-    },
+    // {
+    //   path: '/about',
+    //   text: 'About Me',
+    // },
     {
       path: '/work',
       text: 'Portal App',
