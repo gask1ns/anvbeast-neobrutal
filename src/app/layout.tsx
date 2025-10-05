@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/nav'
+import Footer from '@/components/footer'
 import { ViewTransitions } from 'next-view-transitions'
 import { ThemeProvider } from '@/components/theme-provider'
 
@@ -21,9 +22,14 @@ export default function RootLayout({
       <html suppressHydrationWarning lang="en">
         <body className={montserrat.className}>
           <ThemeProvider attribute="class" disableTransitionOnChange>
-            <Nav />
-            <div className="text-foreground mx-auto w-[750px] max-w-full px-5 pt-28 pb-10">
-              {children}
+            <div className="flex min-h-screen flex-col">
+              <Nav />
+              <main className="flex-grow">
+                <div className="text-foreground mx-auto w-[1000px] max-w-full px-5 pt-35 pb-10">
+                  {children}
+                </div>
+              </main>
+              <Footer /> {/* Footer akan tetap di bawah konten */}
             </div>
           </ThemeProvider>
         </body>
@@ -31,3 +37,4 @@ export default function RootLayout({
     </ViewTransitions>
   )
 }
+
